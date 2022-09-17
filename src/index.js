@@ -1,3 +1,6 @@
+import _ from 'lodash';
+import axios from 'axios';
+
 function component () {
   const element = document.createElement('div');
 
@@ -6,5 +9,7 @@ function component () {
 
   return element;
 }
+
+
 
 document.body.appendChild(component());
