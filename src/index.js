@@ -1,5 +1,6 @@
 import _ from 'lodash';
-import axios from 'axios';
+import moment from 'moment';
+moment.locale('pt-br')
 
 function component () {
   const element = document.createElement('div');
@@ -10,6 +11,12 @@ function component () {
   return element;
 }
 
-
-
 document.body.appendChild(component());
+
+const time = new Date();
+console.log(time);
+
+const timeMoment = moment(time).format("h:mm:ss");
+console.log('timeMoment', timeMoment);
+
+
